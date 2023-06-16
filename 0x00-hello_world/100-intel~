@@ -1,2 +1,0 @@
-#!/bin/bash
-gcc -S masm=intel 100-intel.c -o 100-intel.s
