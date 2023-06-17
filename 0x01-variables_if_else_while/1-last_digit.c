@@ -6,17 +6,17 @@
 /* betty style doc for function main goes there */
 
 /**
- *Main - Entry point
+ *main - Entry point
  *
- *Returnx c : Always 0 (Success)
+ *return : Always 0 (Success)
  */
 
 int main(void)
 {
 	int n;
 	int lastDigit;
-	srand(time(0));
 	
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	lastDigit = n % 10;
