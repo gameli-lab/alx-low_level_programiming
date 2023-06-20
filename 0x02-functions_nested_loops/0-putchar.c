@@ -3,7 +3,7 @@
 /*
  * main - print _putchar using _putchar
  *
- * c - character to be printed (_putchar) followed by a new line
+ *@c - character to be printed (_putchar) followed by a new line
  *
  * Return: returns 0 on success
  */
