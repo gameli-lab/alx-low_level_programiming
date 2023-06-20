@@ -2,8 +2,8 @@
 
 /*
  * main - print _putchar using _putchar
- *Description -  Prints the word _putchar followed by a new line
- * Return: Always 0 (Success)
+ * c - character to be printed (_putchar) followed by a new line
+ * Return: returns 0 on success
  */
 
 int main(void)
