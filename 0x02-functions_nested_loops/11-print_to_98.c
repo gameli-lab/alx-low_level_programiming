@@ -11,9 +11,9 @@ void print_to_98(int n)
 {
 	int z;
 
-	if (n < 98)
+	if (n <= 98)
 	{
-		for (z = n;z <= 98; z++)
+		for (z = n; z <= 98; z++)
 		{
 			if (z == 98)
 			{
