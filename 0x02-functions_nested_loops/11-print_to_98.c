@@ -4,6 +4,8 @@
 /**
  *print_to_98 - prints all natural numbers to 98
  *
+ *@n: the variable from where we're starting to print from
+ *
  *Return: Always 0 (Success)
  */
 
@@ -13,8 +15,8 @@ void print_to_98(int n)
 
 	if (n <= 98)
 	{
-		printf("%d",n);
-		for (i = n+1; i <= 98; i++)
+		printf("%d", n);
+		for (i = n + 1; i <= 98; i++)
 		{
 			printf(", %d", i);
 		}
@@ -22,11 +24,10 @@ void print_to_98(int n)
 	else
 	{
 		printf("%d", n);
-		for (i= n-1; i >= 98; i--)
+		for (i = n - 1; i >= 98; i--)
 		{
 			printf(", %d", i);
 		}
-		printf("\n");
 	}
 	printf("\n");
 }
