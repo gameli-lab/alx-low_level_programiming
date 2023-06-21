@@ -20,7 +20,7 @@ void print_times_table(int n)
 			for (p = 0; p <= n; p++)
 			{
 				q = p * m;
-				printf("%2d", q);
+				printf("%3d", q);
 				if (p != n)
 				{
 					printf(", ");
