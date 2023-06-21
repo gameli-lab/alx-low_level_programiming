@@ -17,6 +17,10 @@ void times_table(void)
 		{
 			result = i * j;
 			printf("%d", result);
+			if (result != 81)
+			{
+				printf(", ");
+			}
 		}
 	_putchar('\n');
 	}
