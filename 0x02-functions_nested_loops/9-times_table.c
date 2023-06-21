@@ -18,7 +18,7 @@ void times_table(void)
 			result = j * i;
 			if (j != 0)
 			{
-				printf(",3%d", result);
+				printf(",%3d", result);
 			}
 			else
 			{
