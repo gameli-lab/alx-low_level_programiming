@@ -10,7 +10,7 @@
 int add(int i, int j)
 {
 	int k = i + j;
-	_putchar('0' + k);
+	_putchar(k);
 	_putchar('\n');
 	return (0);
 }
