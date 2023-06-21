@@ -4,7 +4,9 @@
 /**
  *add - Adds the two integers
  *
- *@i & @j: variables being added
+ *@i: first variable to be added
+ *
+ *@j: second variables being added
  *
  *Return: returns the results of the addition
  */
