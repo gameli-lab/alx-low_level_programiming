@@ -4,7 +4,7 @@
 /**
  *add - Adds the two integers
  *
- *Return: Always 0 (Success)
+ *Return: returns the results of the addition
  */
 
 int add(int i, int j)
@@ -13,7 +13,5 @@ int add(int i, int j)
 	
 	k = i + j;
 	
-	_putchar('0' + k);
-	_putchar('\n');
-	return (0);
+	return (k);
 }
