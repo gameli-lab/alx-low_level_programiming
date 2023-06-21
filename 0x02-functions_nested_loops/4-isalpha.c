@@ -3,7 +3,7 @@
 /**
  *_isalpha - checks for alphabetic character, lowercase or uppercase
  *
- *@c is the variable being tested
+ *@c: is the variable being tested
  *
  *Return: returns 1 if is a letter otherwise 0
  */
