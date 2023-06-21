@@ -3,9 +3,9 @@
 /**
  *print_sign - prints the signs depending on the condition
  *
- *@n is the condition being tested
+ *@n: is the condition being tested
  *
- *return: returns 1 if n is greater than 0,
+ *Return: returns 1 if n is greater than 0,
  * 0 if n is zero otherwise -1 if n is less than 0
  */
 
