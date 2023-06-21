@@ -5,15 +5,21 @@
  *
  *@r: the number who's last digit is being printed
  *
- *@k: it stores the last digit
- *
  *Return: returns the last digit
  */
 
 int print_last_digit(int r)
 {
 	int k = r % 10;
+	if (k < 0)
+	{
 
-	_putchar('0' + k);
-	return (k);
+	       
+	_putchar(-k + '0');
+	return (-k);
+	}
+	else
+	{
+		_putchar(k + '0');
+		return (k);
 }
