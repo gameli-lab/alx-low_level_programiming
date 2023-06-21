@@ -21,19 +21,20 @@ void print_to_98(int n)
 			}
 			else
 			{
-				printf("%2d", z);
-				_putchar(',');
-				_putchar(' ');
+				printf("%2d, ", z);
 			}
 		}
 	}
 	else
 	{
-		for (z= n; z > 98; z--)
+		for (z= n; z >= 98; z--)
 		{
 			printf("%2d", z);
-			_putchar(',');
-			_putchar(' ');
+			if (z != 98)
+			{
+				printf(", ");
+			}
 		}
 	}
+	_putchar('\n');
 }
