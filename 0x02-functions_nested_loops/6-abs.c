@@ -5,7 +5,7 @@
  *
  *@r: is the integer being tested by the function
  *
- *return: returns the absolute value of the integer
+ *Return: returns the absolute value of the integer
  */
 
 int _abs(int r)
@@ -19,6 +19,4 @@ int _abs(int r)
 		{
 			return (-r);
 		}
-}
-
-	
+}	
