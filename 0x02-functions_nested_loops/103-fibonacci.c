@@ -6,7 +6,7 @@
  *Return: returns the sum of the values
  */
 
-unsigned long fibonacci()
+unsigned long fibonacci(void)
 {
 	unsigned long sum = 0, a = 1, b = 2, c;
 
@@ -32,6 +32,7 @@ unsigned long fibonacci()
 int main(void)
 {
 	unsigned long sum = fibonacci();
-	printf("%lu", sum);
+	
+	printf("%lu\n", sum);
 	return (0);
 }
