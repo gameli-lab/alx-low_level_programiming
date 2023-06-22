@@ -40,6 +40,6 @@ unsigned long fibonacci(int n)
 
 int main(void)
 {
-	fibonacci(97);
+	fibonacci(98);
 	return (0);
 }
