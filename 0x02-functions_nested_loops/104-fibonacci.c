@@ -13,7 +13,7 @@ unsigned long fibonacci(int n)
 	int i;
 	unsigned long a = 1, b = 2, c = 0;
 
-	printf("%lu, %lu, " , a , b);
+	printf("%lu, %lu, ", a, b);
 	for (i = 3; i <= n; i++)
 	{
 		c = a + b;
@@ -28,7 +28,7 @@ unsigned long fibonacci(int n)
 			printf("%lu", c);
 		}
 	}
-	printf("\n");
+	printf(" \n");
 	return (c);
 }
 
@@ -40,6 +40,6 @@ unsigned long fibonacci(int n)
 
 int main(void)
 {
-	fibonacci(99);
+	fibonacci(97);
 	return (0);
 }
