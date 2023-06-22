@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 /**
- **main - calls the fibonacci function
- *
  *fibonacci - prints fibinacci numbers
  *
  *@n: is the number of fibonacci numbers to be printed
@@ -30,6 +28,11 @@ void fibonacci(int n)
 	printf("\n");
 }
 
+/**
+ *main - Calls the fibonacci function
+ *
+ *Return: Always 0 (Success)
+ */
 
 int main(void)
 {
