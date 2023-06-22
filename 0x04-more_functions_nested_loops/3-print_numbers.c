@@ -4,8 +4,6 @@
  *print_numbers - prints the numbers from 0 - 9
  *
  *@i: variable for the loop
- *
- *Return: Always 0 (Success)
  */
 
 void print_numbers(void)
