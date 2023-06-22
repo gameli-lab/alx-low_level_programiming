@@ -32,7 +32,7 @@ unsigned long fibonacci(void)
 int main(void)
 {
 	unsigned long sum = fibonacci();
-	
+
 	printf("%lu\n", sum);
 	return (0);
 }
