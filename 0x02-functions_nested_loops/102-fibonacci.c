@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *fibonacci - prints fibinacci numbers
+ **main - calls the fibonacci function
  *
- *main - calls the fibonacci function
+ *fibonacci - prints fibinacci numbers
  *
  *@n: is the number of fibonacci numbers to be printed
  *
@@ -27,7 +27,7 @@ void fibonacci(int n)
 			b = c;
 		}
 	}
-	printf(" \n");
+	printf("\n");
 }
 
 
