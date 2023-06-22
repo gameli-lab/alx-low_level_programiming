@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 /**
- *main - prints fibinacci numbers
+ *fibonacci - prints fibinacci numbers
  *
  *@n: is the number of fibonacci numbers to be printed
+ *
+ *main - calls the fibonacci function
  *
  *Return: Always 0 (Success)
  */
@@ -28,7 +30,7 @@ void fibonacci(int n)
 }
 
 
-int main()
+int main(void)
 {
 	fibonacci(50);
 	return (0);
