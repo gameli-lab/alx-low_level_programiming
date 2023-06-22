@@ -3,6 +3,7 @@
 /**
  *print_diagonal - prints the defined 
  *Description: prints \ diagonally
+ *@n: quantity of \
  *Return: returns the \
  */
 
