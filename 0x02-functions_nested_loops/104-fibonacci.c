@@ -5,6 +5,7 @@
  *
  *@n: quantity of fibonacci numbers to be computed
  *
+ *Return: returns the fibonacci numbers
  */
 
 unsigned long fibonacci(int n)
@@ -12,13 +13,20 @@ unsigned long fibonacci(int n)
 	int i;
 	unsigned long a = 1, b = 2, c = 0;
 
-	printf("%lu, %lu",a ,b);
+	printf("%lu, %lu, ", a , b);
 	for (i = 3; i <= n; i++)
 	{
 		c = a + b;
-		printf("%lu, ", c);
-		a = b;
-		b = c;
+		if (i != n)
+		{
+			printf("%lu, ", c);
+			a = b;
+			b = c;
+		}
+		else
+		{
+			printf("%lu", c);
+		}
 	}
 	printf("\n");
 	return (c);
