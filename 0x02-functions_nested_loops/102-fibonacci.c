@@ -26,7 +26,7 @@ void fibonacci(int n)
 			b = c;
 		}
 	}
-	printf("\n");
+	printf(" \n");
 }
 
 
