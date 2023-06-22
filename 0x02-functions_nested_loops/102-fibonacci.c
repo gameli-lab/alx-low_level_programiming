@@ -3,25 +3,26 @@
 /**
  *fibonacci - prints fibinacci numbers
  *
- *@n: is the number of fibonacci numbers to be printed
- *
  *main - calls the fibonacci function
+ *
+ *@n: is the number of fibonacci numbers to be printed
  *
  *Return: Always 0 (Success)
  */
 
 void fibonacci(int n)
 {
-	int a = 1, b = 2, c, i;
+	int i;
+	unsigned long a = 1, b = 2, c;
 
-	printf("%d, %d", a, b);
+	printf("%lu, %lu", a, b);
 
-	for (i = 2; i < n; i++)
+	for (i = 3; i < n; i++)
 	{
 		c = a + b;
 		if (i != n)
 		{
-			printf(", %d", c);
+			printf(", %lu", c);
 			a = b;
 			b = c;
 		}
