@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *main - calls the function
+ *main - calls the function positive_or_negative()
  *
  *Return: Always 0 (Success)
  */
