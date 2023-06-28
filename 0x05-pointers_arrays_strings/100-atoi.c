@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdbool.h>
 
 /**
  *_atoi - converts strings to integers
@@ -12,10 +13,12 @@ int _atoi(char *s)
 {
 	int sign, i;
 	double digit, res;
+	bool hasDigits;
 
 	sign = 1;
 	res = 0;
 	i = 0;
+	hasDigits = false;
 
 	while (s[i] == ' ')
 	{
@@ -28,6 +31,7 @@ int _atoi(char *s)
 	}
 	else if	(s[i] == '+')
 	{
+		sign = 1;
 		i++;
 	}
 	while (s[i] != '\0')
@@ -36,8 +40,9 @@ int _atoi(char *s)
 		{
 			digit = s[i] - '0';
 			res = res * 10 + digit;
+			hasDigits = true;
 		}
-		else
+		else if (hasDigits)
 		{
 			break;
 		}
