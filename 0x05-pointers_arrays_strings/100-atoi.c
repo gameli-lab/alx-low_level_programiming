@@ -37,6 +37,10 @@ int _atoi(char *s)
 			digit = s[i] - '0';
 			res = res * 10 + digit;
 		}
+		else
+		{
+			break;
+		}
 		i++;
 	}
 	res = res * sign;
