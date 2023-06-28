@@ -10,7 +10,8 @@
 
 int _atoi(char *s)
 {
-	int sign, res, i, digit;
+	int sign, res, i;
+	double digit;
 
 	sign = 1;
 	res = 0;
@@ -33,12 +34,12 @@ int _atoi(char *s)
 	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			digit = s[i] -'0';
-			res = res *10 + digit;
+			digit = s[i] - '0';
+			res = res * 10 + digit;
 		}
 		i++;
 	}
 	res = res * sign;
-	
+
 	return (res);
 }
