@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
 /**
+ *leet - replsces certain characters
  *
+ *@s: character on which operation is to be performed
  *
- *
- *
- *
- *
+ *Return: returns the s
  */
 
 char *leet(char *s)
