@@ -1,0 +1,1 @@
+These are the source codes for the more pointers, arrays and strings project.
