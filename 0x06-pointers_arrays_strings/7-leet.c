@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
+
 /**
  *leet - replsces certain characters
  *
@@ -12,31 +13,25 @@
 char *leet(char *s)
 {
 	int len, i;
+	char c;
 
 	len = strlen(s);
 
 	for (i = 0; i < len; i++)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
-		{
+		c = s[i];
+
+		if (c == 'a' || c == 'A')
 			s[i] = '4';
-		}
-		else if (s[i] == 'e' || s[i] == 'E')
-		{
+		else if (c == 'e' || c == 'E')
 			s[i] = '3';
-		}
-		else if (s[i] == 'o' || s[i] == 'O')
-		{
+		else if (c == 'o' || c == 'O')
 			s[i] = '0';
-		}
-		else if (s[i] == 't' || s[i] == 'T')
-		{
+		else if (c == 't' || c == 'T')
 			s[i] = '7';
-		}
-		else if (s[i] == 'l' || s[i] == 'L')
-		{
+		else if (c == 'l' || c == 'L')
 			s[i] = '1';
-		}
+
 	}
 	return (s);
 }
