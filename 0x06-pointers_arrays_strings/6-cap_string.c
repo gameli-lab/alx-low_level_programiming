@@ -3,6 +3,22 @@
 #include <string.h>
 
 /**
+ *is_separator - identifies the seperators
+ *
+ *@c: argument searching for the separators
+ *
+ *Return: returns the separators
+ */
+
+int is_separator(char c)
+{
+    return (c == ' ' || c == '\t' || c == '\n' || c == ',' || c == ';' || c == '.' ||\
+ c == '!' ||
+            c == '?' || c == '"' || c == '(' || c == ')' || c == '{' || c == '}' || c\
+ == '[' || c == ']');
+}
+
+/**
  *cap_string - capitalizes each word
  *
  *@s: string to be converted
@@ -15,11 +31,14 @@ char *cap_string(char *s)
 	int len, i;
 
 	len = strlen(s);
-
+	if (len > 0 && islower(s[i]))
+	{
+		s[0] = toupper(s[0]);
+	}
 
 	for (i = 0; i < len; i++)
 	{
-		if (islower(s[i]))
+		if (is_separator(s[i]) && islower(s[i]))
 		{
 			s[i] = toupper(s[i]);
 		}
