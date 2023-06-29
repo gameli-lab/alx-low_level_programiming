@@ -12,7 +12,7 @@
 
 int is_separator(char c)
 {
-    return (c == ' ' || c == '\t' || c == '\n' || c == ',' || c == ';' || c == '.' ||\
+	return (c == ' ' || c == '\t' || c == '\n' || c == ',' || c == ';' || c == '.' || \
  c == '!' ||
             c == '?' || c == '"' || c == '(' || c == ')' || c == '{' || c == '}' || c\
  == '[' || c == ']');
@@ -31,14 +31,14 @@ char *cap_string(char *s)
 	int len, i;
 
 	len = strlen(s);
-	if (len > 0 && islower(s[i]))
+	if (len > 0 && islower(s[0]))
 	{
 		s[0] = toupper(s[0]);
 	}
 
 	for (i = 0; i < len; i++)
 	{
-		if (is_separator(s[i]) && islower(s[i]))
+		if (is_separator(s[i - 1]) && islower(s[i]))
 		{
 			s[i] = toupper(s[i]);
 		}
