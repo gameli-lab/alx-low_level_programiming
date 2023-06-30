@@ -19,7 +19,7 @@ char *leet(char *s)
 	char normchar[5] = {'a', 'e', 'o', 't', 'l'};
 
 	len = strlen(s);
-	
+
 	for (i = 0; i < len; i++)
 	{
 		c = s[i];
