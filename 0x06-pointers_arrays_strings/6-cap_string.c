@@ -7,7 +7,7 @@
  *
  *@c: argument searching for the separators
  *
- *Return: returns the separators
+ *Return: returns c
  */
 
 int is_separator(char c)
