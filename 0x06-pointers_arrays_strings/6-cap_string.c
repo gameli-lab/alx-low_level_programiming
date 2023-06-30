@@ -5,17 +5,16 @@
 /**
  *is_separator - identifies the seperators
  *
- *@c: argument searching for the separators
+ *@c: character to check for separators
  *
- *Return: returns c
+ *Return: returns 1 if the character is a separator, 0 otherwise
  */
 
 int is_separator(char c)
 {
-return (c == ' ' || c == '\t' || c == '\n' || c == ',' || c == ';' || c == '.' || \
-c == '!' ||
-c == '?' || c == '"' || c == '(' || c == ')' || c == '{' || c == '}' || c \
- == '[' || c == ']');
+return (c == ' ' || c == '\t' || c == '\n' || c == ',' || c == ';' || \
+	c == '.' || c == '!' || c == '?' || c == '"' || c == '(' || \
+	c == ')' || c == '{' || c == '}' || c == '[' || c == ']');
 }
 
 /**
@@ -23,7 +22,7 @@ c == '?' || c == '"' || c == '(' || c == ')' || c == '{' || c == '}' || c \
  *
  *@s: string to be converted
  *
- *Return: returns s
+ *Return: returns the modified string
  */
 
 char *cap_string(char *s)
