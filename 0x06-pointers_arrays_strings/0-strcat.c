@@ -2,13 +2,12 @@
 #include <string.h>
 
 /**
- *_strcat - it cancatenates src to dest
+ *_strcat - cancatenates src to dest
  *
- *@dest: first argument 
+ *@dest: pointer to destination string
+ *@src: pointer to source string
  *
- *@src: second argument
- *
- *Return: returns a pointer to the resulting dest
+ *Return: pointer to the resulting string
  */
 
 char *_strcat(char *dest, char *src)
