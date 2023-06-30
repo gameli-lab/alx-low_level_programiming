@@ -12,26 +12,25 @@
 
 char *leet(char *s)
 {
-	int len, i;
+	int len, i, j;
 	char c;
 
-	len = strlen(s);
+	char leetchar[5] = {'4', '3', '0', '7', '1'};
+	char normchar[5] = {'a', 'e', 'o', 't', 'l'};
 
+	len = strlen(s);
+	
 	for (i = 0; i < len; i++)
 	{
 		c = s[i];
-
-		if (c == 'a' || c == 'A')
-			s[i] = '4';
-		else if (c == 'e' || c == 'E')
-			s[i] = '3';
-		else if (c == 'o' || c == 'O')
-			s[i] = '0';
-		else if (c == 't' || c == 'T')
-			s[i] = '7';
-		else if (c == 'l' || c == 'L')
-			s[i] = '1';
-
+		for (j = 0; j < 5; j++)
+		{
+			if (c == normchar[j] || c == normchar[j] - ('a' - 'A'))
+			{
+				s[i] = leetchar[j];
+				break;
+			}
+		}
 	}
 	return (s);
 }
