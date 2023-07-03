@@ -5,6 +5,7 @@
  *_memset - fills memory with constant bytes
  *
  *@s: address of area to be filled with constant bytes
+ *                                                                                  * *@b: constant bytes to be filled in memory                                           *                                                                                    *@n: bytes of memory to be filled
  *
  *Return: returns the pointer to the memory area
  */
