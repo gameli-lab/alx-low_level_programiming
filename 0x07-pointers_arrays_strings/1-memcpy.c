@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- *_memcopy - copies n bytes of data from src to dest
+ *_memcpy - copies n bytes of data from src to dest
  *
  *@dest: destionation of copied data
  *@src: source of data to be copied
