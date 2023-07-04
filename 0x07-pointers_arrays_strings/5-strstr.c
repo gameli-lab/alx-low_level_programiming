@@ -13,12 +13,8 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	if (strstr(haystack, needle) != NULL)
-	{
-		return (needle);
-	}
-	else
-	{
-		return (NULL);
-	}
+	char *z;
+	
+	z = strstr(haystack, needle);
+		return (z);
 }
