@@ -13,10 +13,7 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	char z;
-
-	z = strpbrk(s, accept);
-	if (z != NULL)
+	if (strpbrk(s, accept) != NULL)
 	{
 		return (accept);
 	}

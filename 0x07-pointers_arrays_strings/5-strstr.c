@@ -13,11 +13,7 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char x;
-
-	x = strstr(haystack, needle);
-
-	if (x != NULL)
+	if (strstr(haystack, needle) != NULL)
 	{
 		return (needle);
 	}
