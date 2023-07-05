@@ -4,7 +4,7 @@
 /**
  *_puts_recursion - prints a string
  *
- *@a: pointer to the string to be printed
+ *@s: pointer to the string to be printed
  *
  *Return: Always 0 (Success)
  */
