@@ -16,7 +16,7 @@
 
 int _sqrt_recursive(int n, int start, int end)
 {
-	long long mid, square;
+	long mid, square;
 
 	if (start > end)
 	{
