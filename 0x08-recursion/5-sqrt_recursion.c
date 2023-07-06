@@ -3,7 +3,7 @@
 #include <math.h>
 
 /**
- *sqrt_recursive - finds square root of a number
+ *_sqrt_recursive - finds square root of a number
  *
  *@n: address to the number
  *
@@ -14,29 +14,29 @@
  *Return: returns square_recursive
  */
 
-int _sqrt_recursive(int n, int start, int end) 
+int _sqrt_recursive(int n, int start, int end)
 {
 	int mid, square;
-   
-	if (start > end) 
+
+	if (start > end)
 	{
-		return -1;
+		return (-1);
 	}
 
 	mid = (start + end) / 2;
 	square = mid * mid;
 
-	if (square == n) 
+	if (square == n)
 	{
-		return mid; 
-	} 
-	else if (square < n) 
+		return mid;
+	}
+	else if (square < n)
 	{
-		return _sqrt_recursive(n, mid + 1, end); 
-	} 
-	else 
+		return (_sqrt_recursive(n, mid + 1, end));
+	}
+	else
 	{
-		return _sqrt_recursive(n, start, mid - 1);
+		return (_sqrt_recursive(n, start, mid - 1));
 	}
 }
 
@@ -48,7 +48,7 @@ int _sqrt_recursive(int n, int start, int end)
  *Return: returns -1 for non natural square root numbers
  */
 
-int _sqrt_recursion(int n) 
+int _sqrt_recursion(int n)
 {
-	return _sqrt_recursive(n, 0, n);
+	return (_sqrt_recursive(n, 0, n));
 }
