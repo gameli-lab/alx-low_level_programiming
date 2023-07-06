@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
 
 /**
  *is_prime_number - finds prime numbers
@@ -11,11 +12,12 @@
 
 int is_prime_number(int n)
 {
+	int i, sq;
+
 	if (n < 2)
 	{
 		return (0);
 	}
-	int i, sq;
 	sq = sqrt(n);
 
 	for (i = 2; i <= sq; i++)
