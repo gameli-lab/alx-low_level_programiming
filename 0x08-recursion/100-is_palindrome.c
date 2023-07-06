@@ -13,7 +13,7 @@
  *Return: returns 1 for palindrome otherwise 0
  */
 
-int check_palindrome (char *s, int left, int right)
+int check_palindrome(char *s, int left, int right)
 {
 	if (left >= right)
 	{
