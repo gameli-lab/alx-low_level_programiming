@@ -12,15 +12,14 @@
 
 int is_prime_number(int n)
 {
-	int i, sq;
+	int i;
 
 	if (n < 2)
 	{
 		return (0);
 	}
-	sq = sqrt(n);
 
-	for (i = 2; i <= sq; i++)
+	for (i = 2; i * i <= n; i++)
 	{
 		if (n % i == 0)
 		{
