@@ -10,21 +10,25 @@
  *Return: returns 1 for prime numbers otherwise 0
  */
 
-int is_prime_number(int n)
+int is_prime(int n, int i)
 {
-	int i;
-
 	if (n < 2)
 	{
 		return (0);
 	}
 
-	for (i = 2; i * i <= n; i++)
+	if (n % i == 0 && i != n)
 	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
+	       	return (0);
 	}
-	return (1);
+	if (i * i > n)
+	{
+		return (1);
+	}
+	return (is_prime_number(n,i + 1))
+}
+
+int is_prime_number(int n)
+{
+	return (is_prime(n, 2));
 }
