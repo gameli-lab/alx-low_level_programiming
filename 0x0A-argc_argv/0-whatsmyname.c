@@ -13,7 +13,7 @@
 
 int main(int argc, char *argv[])
 {
-	printf("The program name is %s\n", argv[0]);
+	puts(argv[0]);
 
 	return (argc);
 }
