@@ -12,6 +12,7 @@
 int myname(char *argv)
 {
 	printf("%s\n", argv);
+	return (0);
 }
 
 /**
