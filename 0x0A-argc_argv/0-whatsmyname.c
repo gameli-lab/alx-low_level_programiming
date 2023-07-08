@@ -22,7 +22,7 @@ int myname(char *argv)
  *
  *@argv: argument value
  *
- *Return: returns argument count
+ *Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
