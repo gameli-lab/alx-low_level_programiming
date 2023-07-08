@@ -2,14 +2,13 @@
 #include <stdio.h>
 
 /**
- *main - print the program name
- *
- *@argc: argument count
+ *myname - print the program name
  *
  *@argv: argument value
  *
  *Return: Always 0 (Success)
  */
+
 int myname(char *argv)
 {
 	printf("%s\n", argv);
