@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int main(int argc, char *argv[]);
+int myname(char *argv);
+int no_args(int argc);
+
 
 #endif
