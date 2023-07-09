@@ -22,12 +22,11 @@ int myname(char *argv)
  *
  *@argv: argument value
  *
- *Return: Always 0 (Success)
+ *Return: returns argc
  */
 
 int main(int argc, char *argv[])
 {
 	puts(argv[0]);
-
 	return (argc);
 }
