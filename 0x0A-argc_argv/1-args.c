@@ -12,7 +12,7 @@
 
 int no_args(int argc)
 {
-	printf("%d", argc - 1);
+	printf("%d\n", argc);
 	return (0);
 }
 
