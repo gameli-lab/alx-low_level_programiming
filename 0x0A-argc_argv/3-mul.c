@@ -14,6 +14,7 @@
 long mul(long a, long b)
 {
 	long c;
+
 	c = a * b;
 
 	return (c);
