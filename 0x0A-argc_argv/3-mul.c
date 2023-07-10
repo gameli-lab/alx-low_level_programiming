@@ -3,21 +3,20 @@
 #include <stdlib.h>
 
 /**
-long mul - multiples two longs
-*
-*@a: first parameter for mul
-*
-*@b: second parameter for mul
-*
-*Return: returns the result stored in c
-*/
+ *mul - multiples two longs
+ *
+ *@a: first parameter for mul
+ *
+ *@b: second parameter for mul
+ *
+ *Return: returns the result stored in c
+ */
 
 long mul(long a, long b)
 {
 	long c;
 	c = a * b;
 	return (c);
-	
 }
 
 /**
