@@ -6,7 +6,6 @@
  *mul - multiples two longs
  *
  *@a: first parameter for mul
- *
  *@b: second parameter for mul
  *
  *Return: returns the result stored in c
@@ -16,6 +15,7 @@ long mul(long a, long b)
 {
 	long c;
 	c = a * b;
+
 	return (c);
 }
 
@@ -23,7 +23,6 @@ long mul(long a, long b)
  *main - call the mul function
  *
  *@argc: counts the parameters passed
- *
  *@argv: holds the values passed as parameter
  *
  *Return: returns 1 for error otherwise 0
