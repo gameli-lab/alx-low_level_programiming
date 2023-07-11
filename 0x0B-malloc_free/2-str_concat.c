@@ -2,6 +2,15 @@
 #include <string.h>
 #include <stdlib.h>
 
+/**
+ *str_concat - concatenates two strings
+ *
+ *@s1: string one
+ *@s2: string two
+ *
+ *Return: returns the result of the concatenation
+ */
+
 char *str_concat(char *s1, char *s2)
 {
 	char *res;
