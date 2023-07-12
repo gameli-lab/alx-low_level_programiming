@@ -2,6 +2,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ *alloc_grid - prints grid of numbers
+ *
+ *@width: width of the grid
+ *@height: height of the grid
+ *
+ *Return: returns the grid
+ */
+
 int **alloc_grid(int width, int height)
 {
 	int **grid;
