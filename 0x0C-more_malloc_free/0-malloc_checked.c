@@ -7,7 +7,7 @@
  *
  *@b: what memory is being allocated for
  *
- *Return: returns the pointer
+ *Return: Always 0 (Success)
  */
 
 void *malloc_checked(unsigned int b)
