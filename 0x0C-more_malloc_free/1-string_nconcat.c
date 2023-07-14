@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
  *string_nconcat - concatenates two strings
  *
@@ -31,7 +32,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len2 = strlen(s2);
 
-	len3 = len1 + (n >= len2 ? len2 : n);
+	if (n >= len2)
+	{
+		len3 = len1 + len2;
+	}
+	else
+	{
+		len3 = len1 + n;
+	}
 
 	p = (char*)malloc((len3 + 1) * sizeof(char));
 
