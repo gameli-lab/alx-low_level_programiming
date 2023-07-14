@@ -27,7 +27,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-
 	len1 = strlen(s1);
 
 	len2 = strlen(s2);
@@ -51,5 +50,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
+
 	return (p);
 }
