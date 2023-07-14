@@ -7,7 +7,10 @@
  *
  *@b: what memory is being allocated for
  *
- *Return: Always 0 (Success)
+ *Exit: exits with status 98 if malloc fails
+ *
+ *Return: returns pointer to the memory allocated
+ *
  */
 
 void *malloc_checked(unsigned int b)
