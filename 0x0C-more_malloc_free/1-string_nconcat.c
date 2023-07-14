@@ -28,7 +28,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 	len1 = strlen(s1);
-
 	len2 = strlen(s2);
 
 	if (n >= len2)
@@ -39,17 +38,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		len3 = len1 + n;
 	}
-
 	p = (char*)malloc((len3 + 1) * sizeof(char));
 
-	strncpy(p, s1, len1);
-	strncat(p, s2, len3 - len1);
-	p[len3] = '\0';
-
-	if (p == NULL)
+	if(p == NULL)
 	{
 		return (NULL);
 	}
+	strncpy(p, s1, len1);
+	strncat(p, s2, len3 - len1);
+	p[len3] = '\0';
 
 	return (p);
 }
