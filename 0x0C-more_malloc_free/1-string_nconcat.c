@@ -11,8 +11,7 @@
  *@n: length of string for concatenation
  *
  *Return: returns the resulting string
- */ 
-
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
