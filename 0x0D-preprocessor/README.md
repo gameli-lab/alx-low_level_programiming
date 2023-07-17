@@ -1,0 +1,1 @@
+These are source codes for the structures and typedef project
