@@ -2,6 +2,7 @@
 
 /**
  *print_dog - prints the struct
+ *@d: pointer to the structure
  *
  *Return: returns nothing
  */
