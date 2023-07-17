@@ -1,5 +1,5 @@
+#define SIZE 1024
+
 /**
  *#define - defines SIZE
  */
-
-#define SIZE (1024)
