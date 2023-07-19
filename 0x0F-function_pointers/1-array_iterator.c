@@ -5,6 +5,7 @@
  *array_iteration - iterates though the array
  *@array: the array
  *@size: size of the array
+ *@action: pointer to a function
  *
  *Return: Nothing.
  */
