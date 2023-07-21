@@ -1,4 +1,4 @@
-#include "variadic_function.h"
+#include "variadic_functions.h"
 
 /**
  *sum_them_all - add sll its parameters
@@ -10,7 +10,7 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
-	int i, sum;
+	unsigned int i, sum;
 
 	va_start (ap, n);
 
