@@ -1,11 +1,10 @@
 #include "lists.h"
 
-
 /**
- *print_listint - prints the number of nodes 
+ *print_listint - prints the number of nodes
  *@h: the head pointing to the first node
  *
- *Return: returns count
+ *Return: returns the number of nodes
  */
 
 size_t print_listint(const listint_t *h)
