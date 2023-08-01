@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *size_t listint_len - counts the number of elements in the linked list
+ *listint_len - counts the number of elements in the linked list
  *@h: header to the first node in the link
  *
  *Description: singly linked list node structure
