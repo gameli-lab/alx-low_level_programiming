@@ -1,1 +1,0 @@
-These are source codes for the malloc and free project
