@@ -8,7 +8,7 @@
  *Return: the value
  */
 
-int checker(int x, int divisor)
+int checker(int n, int divisor)
 {
   if (divisor <= 1)
     {
