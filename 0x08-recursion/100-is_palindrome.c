@@ -35,5 +35,5 @@ int len;
 
 len = strlen(s);
 
- return (checker(s, 0, len - 1);
+ return (checker(s, 0, len - 1));
 }
