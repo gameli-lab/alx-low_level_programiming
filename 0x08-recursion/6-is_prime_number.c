@@ -20,7 +20,7 @@ int checker(int n, int divisor)
     }
   else
     {
-      return (n, divisor - 1);
+      return (checker(n, divisor - 1));
     }
 }
 
