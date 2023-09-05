@@ -16,7 +16,7 @@ char **strtow(char *str)
 	int wordStart = 0;
 	int wordLen;
 
-	if ((str == NULL) || (str == " "))
+	if ((str == NULL) || (strcmp(str,"") == 0))
 	{
 		return (NULL);
 	}
