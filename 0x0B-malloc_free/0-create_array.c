@@ -2,8 +2,8 @@
 
 /**
  * create_array - creates an array
- * size: the size of the array
- * c: character to be assigned to the array
+ * @size: the size of the array
+ * @c: character to be assigned to the array
  *
  * Return: the array on success otherwise NULL
  */
