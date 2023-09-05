@@ -22,15 +22,16 @@ char *argstostr(int ac, char **av)
 	{
 		totalLen += strlen(av[i]);
 	}
-	totalLen += ac - 1;
+	totalLen += ac;
 
-	result = (char *)malloc(totalLen + 1);
+	result = (char *)malloc(totalLen);
 
 	if (result == NULL)
 	{
 		return (NULL);
 	}
 	index = 0;
+
 	for (i = 0; i < ac; i++)
 	{
 		strcpy(result + index, av[i]);
@@ -45,4 +46,3 @@ char *argstostr(int ac, char **av)
 	result[index] = '\0';
 	return (result);
 }
-	
