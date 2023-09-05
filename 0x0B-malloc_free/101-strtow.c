@@ -16,7 +16,7 @@ char **strtow(char *str)
 	int wordStart = 0;
 	int wordLen;
 
-	if ((str == NULL) || (str == ""))
+	if ((str == NULL) || (str == " "))
 	{
 		return (NULL);
 	}
@@ -56,8 +56,8 @@ char **strtow(char *str)
 			i++;
 		}
 		wordLen = i - wordStart;
-		words[wordIndex] (char *)malloc((wordLen + 1) * sizeof(char));
-		if (words[wordIndex]) == NULL)
+		words[wordIndex] = (char *)malloc((wordLen + 1) * sizeof(char));
+		if (words[wordIndex] == NULL)
 		{
 			for (j = 0; j < wordIndex; j++)
 			{
