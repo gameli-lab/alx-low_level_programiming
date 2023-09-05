@@ -18,11 +18,12 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
+
 	for (i = 0; i < ac; i++)
 	{
-		totalLen += strlen(av[i]);
+		totalLen += strlen(av[i] + 1);
 	}
-	totalLen += ac;
+	//totalLen += ac;
 
 	result = (char *)malloc(totalLen);
 
@@ -30,6 +31,7 @@ char *argstostr(int ac, char **av)
 	{
 		return (NULL);
 	}
+
 	index = 0;
 
 	for (i = 0; i < ac; i++)
