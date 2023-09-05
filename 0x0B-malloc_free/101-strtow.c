@@ -10,7 +10,7 @@
 char **strtow(char *str)
 {
 	int numWords = 0;
-	int i;
+	int i, j;
 	char **words;
 	int wordIndex = 0;
 	int wordStart = 0;
