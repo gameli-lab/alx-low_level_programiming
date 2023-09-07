@@ -17,7 +17,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	totalSize =(size_t) nmemb * size;
+	totalSize =(size_t)nmemb * size;
 
 	void *mem = malloc(totalSize);
 
@@ -29,4 +29,3 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	return (mem);
 }
-
