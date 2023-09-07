@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strint_nconcat - concatenates strings with given bytes
+ * string_nconcat - concatenates strings with given bytes
  * @s1: first string
  * @s2: second string
  * @n: number of bytes
@@ -18,6 +18,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s1 = " ";
 	}
+
 	if (s2 == NULL)
 	{
 		s2 = " ";
@@ -39,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	result = (char *)malloc((reslen + 1) * sizeof(char));
 
 	strcpy(result, s1);
-		
+	
 	strncat(result, s2, n);
 
 	return (result);
