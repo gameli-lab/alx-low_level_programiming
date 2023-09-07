@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	result = (char *)malloc((reslen + 1) * sizeof(char));
 
 	strcpy(result, s1);
-	
+
 	strncat(result, s2, n);
 
 	return (result);
