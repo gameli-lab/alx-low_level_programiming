@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	strcpy(result, s1);
 		
-	strncat(res, s2, n);
+	strncat(result, s2, n);
 
 	return (result);
 }
