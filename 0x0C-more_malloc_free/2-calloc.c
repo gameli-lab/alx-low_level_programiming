@@ -10,6 +10,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	void *mem;
 	size_t totalSize;
 
 	if ((nmemb == 0) || (size == 0))
@@ -19,7 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	totalSize =(size_t)nmemb * size;
 
-	void *mem = malloc(totalSize);
+	mem = malloc(totalSize);
 
 	if (mem == NULL)
 	{
