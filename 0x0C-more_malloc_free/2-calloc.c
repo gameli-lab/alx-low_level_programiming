@@ -5,7 +5,7 @@
  * @nmemb: size of the array
  * @size: size of each member
  *
- * Return: return a pointer to the allocated memory or NULL on erreo
+ * Return: return a pointer to the allocated memory or NULL on error
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
