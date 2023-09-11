@@ -2,17 +2,11 @@
 
 /**
  * main - Entry point
- * @argc: argument count
- * @argv: argument vector
  *
  * Return: nothing
  */
 
-int main(int argc, char* argv[])
+int main(void)
 {
-	while(argc)
-	{
-		printf("%s\n", argv[0]);
-		return (0);
-	}
+	printf("%s\n", __FILE__);
 }
