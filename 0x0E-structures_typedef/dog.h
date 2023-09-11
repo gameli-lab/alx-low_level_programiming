@@ -1,11 +1,14 @@
 #ifndef DOG_H
 #define DOG_H
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct dog - a structure for dog
  * @name: the dog's name
  * @age: the dog's age
  * @owner: the dog's owner
+ *
  */
 
 struct dog
@@ -17,6 +20,7 @@ struct dog
 
 /**
  * dog_t - a new typedef for dog_t
+ *
  */
 
 typedef struct dog dog_t;
