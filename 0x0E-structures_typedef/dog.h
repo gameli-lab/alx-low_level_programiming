@@ -1,13 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
 
-/**
- * struct dog - A new type for dog
- * @name: the dog's name
- * @age: the dog's age
- * @owner: the dog's owner
- *
- */
 
 struct dog
 {
@@ -16,10 +9,6 @@ struct dog
 	char* owner;
 };
 
-/**
- * dog_t - new typedef for dog
- *
- */
 
 typedef struct dog dog_t;
 
