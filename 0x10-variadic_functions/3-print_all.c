@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char c;
 	float f;
-	char* str;
+	char* s;
 	va_list all;
 	va_start(all, format);
 
