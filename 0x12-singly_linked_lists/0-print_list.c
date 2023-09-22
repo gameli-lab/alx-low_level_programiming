@@ -4,7 +4,6 @@
 /**
  * print_list - prints all elements of the list
  * @h: pointer to the head
- *
  * Return: number of nodes
  */
 
