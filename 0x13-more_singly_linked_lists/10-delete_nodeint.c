@@ -3,7 +3,7 @@
 /**
  * delete_nodeint_at_index - dels at an idx
  * @head: head of the link
- * @idx: node to del
+ * @index: node to del
  * Return: 1 if it succeeded, -1 if it failed
  */
 
@@ -33,7 +33,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		pos++;
 	}
 	if (current == NULL)
-		return -1;
+		return (-1);
 	prev->next = current->next;
 	free(current);
 
