@@ -15,7 +15,7 @@ size_t print_listint_safe(const listint_t *head)
 	{
 		printf("%d\n", current->n);
 		c++;
-		if (current < current->n)
+		if (current < current->next)
 			exit(98);
 		current = current->next;
 	}
