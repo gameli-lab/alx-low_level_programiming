@@ -10,35 +10,36 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *file;
-	size_t lets = 0;
-	int c;
+	int file;
+	size_t lets = 0, bytrd, bytwt;
+	char buff[1];
 
 	if (filename == NULL)
 		return (0);
 
-	file = fopen(filename, "r");
+	file = open(filename, O_RDONLY);
 
-	if (file == NULL)
+	if (file == -1)
 		return (0);
 
 	while (lets < letters)
 	{
-		c = fgetc(file);
-		if (c == EOF)
+		bytrd = read(file, buff, 1);
+		if (bytrd == 0)
 			break;
-		if (write(1, &c, 1) == EOF)
+		else if ((int)bytrd == -1)
 		{
-			fclose(file);
+			close(file);
+			return (0);
+		}
+		bytwt = write(STDOUT_FILENO, buff, 1);
+		if (bytwt != 1)
+		{
+			close(file);
 			return (0);
 		}
 		lets++;
 	}
-	if (ferror(file))
-	{
-		fclose(file);
-		return (0);
-	}
-	fclose(file);
+	close(file);
 	return (lets);
 }
