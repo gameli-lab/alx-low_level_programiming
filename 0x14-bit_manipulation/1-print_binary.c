@@ -13,13 +13,14 @@ void print_binary(unsigned long int n)
 	while (i >= 0)
 	{
 		int ans = (n >> i) & 1;
+
 		if (ans)
 		{
 			zeros = 0;
 			_putchar('0' + ans);
 		}
 		else if (!zeros || i == 0)
-				_putchar('0' + ans);
+			_putchar('0' + ans);
 		i--;
 	}
 }
