@@ -2,7 +2,7 @@
 
 /**
  * get_endianness - gets the endiannes of the system
- * Return:  the endianness
+ * Return: the endianness
  */
 
 int get_endianness(void)
