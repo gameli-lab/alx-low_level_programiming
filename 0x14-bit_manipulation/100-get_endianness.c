@@ -11,3 +11,4 @@ int get_endianness(void)
 	unsigned char *my = (unsigned char *) & num;
 
 	return ((int) * my);
+}
