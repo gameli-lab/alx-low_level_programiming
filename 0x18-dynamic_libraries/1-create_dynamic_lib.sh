@@ -2,4 +2,6 @@
 
 gcc -c -fPIC *.c
 
-gcc -shared -o libball.so *.o
+gcc -shared -o liball.so *.o
+
+rm *.o
