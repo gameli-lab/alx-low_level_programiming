@@ -14,7 +14,10 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 	unsigned long int mod;
 
 	while (*key)
-		hash_code = hash_djb2(*key++);
+	{
+		hash_code = (hash_code * 33) ^ (*key);
+		key++;
+	}	
 
 	mod = hash_code % size;
 
