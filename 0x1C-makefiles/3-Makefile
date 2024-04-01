@@ -2,7 +2,7 @@ CC = gcc
 SRC =$(wildcard *.c)
 OBJ =$(SRC:.c=.o)
 NAME =school
-RE = rm -f
+RE = rm 
 
 $(NAME): $(OBJ)
 	$(CC) $^ -o $@
