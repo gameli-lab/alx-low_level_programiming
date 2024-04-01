@@ -7,10 +7,7 @@ RE = rm -f
 $(NAME): $(OBJ)
 	$(CC) $^ -o $@
 
-school.o: school.c m.h
-	$(CC) -c -o $@ $<
-
-main.o: main.c m.h
+%.o: %.c m.h
 	$(CC) -c -o $@ $<
 
 .PHONY:all clean oclean fclean re
