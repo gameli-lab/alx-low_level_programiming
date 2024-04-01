@@ -1,5 +1,5 @@
 CC = gcc
-SRC =$(wildcard *.c)
+SRC = main.c school.c
 
 school: school.c m.h
 	${CC} ${SRC} -o school
