@@ -1,5 +1,5 @@
 #include "search_algos.h"
-#include <unistd.h>
+#include <stdlib.h>
 
 /**
  * linear_search - function to search
@@ -12,21 +12,18 @@
 int linear_search(int *array, size_t size, int value)
 {
 	size_t i;
-	char mess[50];
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
 
 	for( i = 0; i < size; i++)
 		if (array[i] == value)
 		{
-			sprintf(mess, "Value checked: array[%zu] = [%d]\n", i, array[i]);
-                        write(1, mess, strlen(mess));
+			printf("Value checked: array[%zu] = [%d]\n", i, array[i]);
                         return (i);
 		}
 		else
 		{
-			sprintf(mess, "Value checked: array[%zu] = [%d]\n", i, array[i]);
-			write(1, mess, strlen(mess));
+			printf("Value checked: array[%zu] = [%d]\n", i, array[i]);
 		}
 
 	return (-1);
